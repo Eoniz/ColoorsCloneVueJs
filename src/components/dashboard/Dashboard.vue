@@ -11,6 +11,7 @@
                     v-bind:style="{
                         'color': `${color.textColor}`
                     }"
+                    @click="handleHexClicked(color.hex)"
                 >
                     {{ color.hex }}
                 </span>
@@ -45,6 +46,9 @@ export default {
         rgbToHex,
         handleKeyPressed: function () {
             this.palette = generateRandomPalette(5);
+        },
+        handleHexClicked: function (hex) {
+            navigator.clipboard.writeText(hex);
         }
     }
 }
@@ -81,6 +85,12 @@ export default {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
+    transition: filter linear 0.1s;
+    cursor: pointer; 
+}
+
+.color-container>div .hex:hover {
+    filter: opacity(55%);
 }
 
 .color-container>div .color-name {

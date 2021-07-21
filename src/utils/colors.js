@@ -90,7 +90,7 @@ export const generateRandomPalette = (n) => {
             name: meta[0],
             luma: 0.3 * R + 0.59 * G + 0.11 * B,
             confidence: Math.floor(100 - ((meta[2] * meta[1]) / 100)),
-            textColor: (R*0.299 + G*0.587 + B*0.114) > 186 ? "#000" : "#fff"
+            textColor: (R*0.299 + G*0.587 + B*0.114) > 186 ? "#545454" : "#fff"
         });
     }
 
