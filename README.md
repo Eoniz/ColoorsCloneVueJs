@@ -1,24 +1,27 @@
-# coloors_js
+# Coloors Clone Using VueJs
 
-## Project setup
+![alt text](./github_img/img.PNG)
+
+# Todo
+
+## Colors
+- [ ] Color lock
+- [ ] Color dragging
+- [ ] Copy HEX
+- [ ] Colors toolbar
+- [ ] Custom amount of colors
+
+## Others
+- [ ] Using firebase for sign up / sign in
+- [ ] Using firebase for saving palette
+
+## Project Setup
+In order to setup the project, you first have to install deps using:
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+Then, you can run this command to start the local server
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
