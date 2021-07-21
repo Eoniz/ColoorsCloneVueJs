@@ -1,5 +1,5 @@
 <template>
-  <div class="dashboard" tabindex="0" @keyup.space="handleKeyPressed">
+  <div class="dashboard" tabindex="0" @keypress.space="handleKeyPressed">
         <div class="color-container" v-for="color in palette" :key="color.hex">
             <div
                 v-bind:style="{
@@ -36,7 +36,7 @@ import {
 export default {
     name: 'dashboard',
     data() {
-        const palette = generateRandomPalette(6);
+        const palette = generateRandomPalette(5);
         return {
             palette
         }
@@ -44,7 +44,7 @@ export default {
     methods: {
         rgbToHex,
         handleKeyPressed: function () {
-            this.palette = generateRandomPalette(6);
+            this.palette = generateRandomPalette(5);
         }
     }
 }
